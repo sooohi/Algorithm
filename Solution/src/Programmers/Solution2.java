@@ -1,3 +1,5 @@
+package Programmers;
+
 import java.util.*;
 public class Solution2 {
     //public int[] solution(int []arr){
