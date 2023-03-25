@@ -46,4 +46,4 @@ cnt[2]++;
 ## Solution4-k번째 수
 - commands의 길이만큼 반복
 - list에 commands[i][1]-commands[i][0] 한 값 저장
-- sort를 사용해 정렬하기
+- sort를 사용해 정렬하기ㄴ
