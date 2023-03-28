@@ -7,13 +7,13 @@
 
 ### 다른 사람의 코멘트
 1. contains를 사용해 비교 할 수 있음.
-2. 자바 시간복잡도 알아보기 
+2. 자바 시간복잡도 알아보기
 3. arraylist는 값 읽을때만 빠름. 반대로 값 추가,삭제를 넣어야하면 linkedlist -> 이 두개에 대해 알아보기
 ---
 ## Solution2-모의고사
 - 배열을 사용해 순서를 비교하려 했으나 너무 복잡해짐
 - 각자 3,8,10개씩 찍는 패턴이 반복되는 것을 찾음
-- 그래서 a,aa,aaa에 각각의 패턴을 저장함 
+- 그래서 a,aa,aaa에 각각의 패턴을 저장함
 - 나눠서 answers와 비교해 같다면 해당하는 cnt를 증가시킴
 ```C
 if (a[i%5]==answers[i])
@@ -28,7 +28,7 @@ cnt[2]++;
 - intellij에서 실행한 코드랑 프로그래머스에서 실행한 코드 중 arr과 answer가 달라 생긴 기본적인 오류가 있었음
 
 ### 다른 사람의 코멘트
-1. 런타임 에러가 계속 발생하였는데 int[] answer=new int[maxlist.size()];는 maxlist 한 다음 아래 선언해야함 
+1. 런타임 에러가 계속 발생하였는데 int[] answer=new int[maxlist.size()];는 maxlist 한 다음 아래 선언해야함
 2. 최댓값 구하는거는 -> max=Math.max(max,ab[i]);
 ---
 ## Solution3-최소직사각형
@@ -44,6 +44,7 @@ cnt[2]++;
 2. 또 다른 방법으로 arr[i][0]과 arr[0][1]비교 arr[1][1]비교. 이런식으로 전부 비교해보는 방법도 있음
 ---
 ## Solution4-k번째 수
-- commands의 길이만큼 반복
-- list에 commands[i][1]-commands[i][0] 한 값 저장
+- commands 만큼 반복
+- list의 크기는 commands[i][1]-commands[i][0]
 - sort를 사용해 정렬하기
+- answer에서 계속 오류 뜨는데 해결 못함

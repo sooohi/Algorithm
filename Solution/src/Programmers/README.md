@@ -44,7 +44,8 @@ cnt[2]++;
 2. 또 다른 방법으로 arr[i][0]과 arr[0][1]비교 arr[1][1]비교. 이런식으로 전부 비교해보는 방법도 있음
 ---
 ## Solution4-k번째 수
-- commands 만큼 반복
-- list의 크기는 commands[i][1]-commands[i][0]
-- sort를 사용해 정렬하기
-- answer에서 계속 오류 뜨는데 해결 못함
+- answer[n]을 저장하는 부분에서 계속 오류가 발생하였음
+- 위에 선언을 리스트로 했을경우는 .add를 사용해야함
+- 프로그래머스에서는 int형이기때문에 내가 처음 짰던 answer[n]= list[commands[i][2]-1]로 해결하는게 맞음
+- 두번째 오류는 commands[i][1]-commands[i][0]+1; answer[n]= list[commands[i][2]-1];을 해줘야 해결가능
+- 이 문제를 풀면서 기본기를 더욱 튼튼하게 쌓아야겠다고 느낌,,,
