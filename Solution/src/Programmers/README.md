@@ -49,3 +49,19 @@ cnt[2]++;
 - 프로그래머스에서는 int형이기때문에 내가 처음 짰던 answer[n]= list[commands[i][2]-1]로 해결하는게 맞음
 - 두번째 오류는 commands[i][1]-commands[i][0]+1; answer[n]= list[commands[i][2]-1];을 해줘야 해결가능
 - 이 문제를 풀면서 기본기를 더욱 튼튼하게 쌓아야겠다고 느낌,,,
+- ---
+## Solution5-체육복
+- 여벌 옷 있는 학생이 도난당했을 때는 빌려줄 수 없어서 reserve에서 제외
+- 여러개의 테스트케이스 틀림 -> lost[i]와 reserve[j]에는 0이 아닌 -1을 대입해야함. 왜냐하면 0을 대입 했을 경우 lost[i]+1 값이 1이 되서 if문으로 넘어감
+
+
+### 다른 사람의 코멘트
+1. int answer = n-lost.length;했더니 오류남. 이 부분은 아래 방식으로 해결함.(프로그래머스에서는 n,lost,reserve를 전부 줌).
+```C
+Scanner n = new Scanner(System.in);
+int count = n.nextInt();
+int answer = count-lost.length;
+```
+2. 테스트케이스 13,18오류 -> lost와 reserve가 정렬이 되지 않은 상황도 고려해야함
+3. 입력받는 방법은 bufferdreader와 scanner 두 가지 있으니 공부하기 -> 전자 사용하는거 추천
+---
