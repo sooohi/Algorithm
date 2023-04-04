@@ -52,7 +52,7 @@ cnt[2]++;
 - ---
 ## Solution5-체육복
 - 여벌 옷 있는 학생이 도난당했을 때는 빌려줄 수 없어서 reserve에서 제외
-- 
+- 여러개의 테스트케이스 틀림 -> lost[i]와 reserve[j]에는 0이 아닌 -1을 대입해야함. 왜냐하면 0을 대입 했을 경우 lost[i]+1 값이 1이 되서 if문으로 넘어감
 
 
 ### 다른 사람의 코멘트
@@ -63,4 +63,5 @@ int count = n.nextInt();
 int answer = count-lost.length;
 ```
 2. 테스트케이스 13,18오류 -> lost와 reserve가 정렬이 되지 않은 상황도 고려해야함
+3. 입력받는 방법은 bufferdreader와 scanner 두 가지 있으니 공부하기 -> 전자 사용하는거 추천
 ---
