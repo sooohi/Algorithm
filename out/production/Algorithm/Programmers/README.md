@@ -76,5 +76,10 @@ int answer = count-lost.length;
 - 코드 실행에서 괜찮았는데 제출만 하면 1번 케이스에서 런타임 오류 -> 폰켓몬의 종류는 2000000이하니까 cnt는 200001길리의 배열로 만듬
 ---
 ## Solution8-완주하지 못한 선수
-- 문제를 정렬해야함
+- 우선 participant와 completion을 정렬해야함
+- if(participant[i].equals(completion[i]))일 경우 continue해주고 아닐경우 출력했는데, 그러다 보니 아래에서 이중 출력되는 에러 발생
+- completion의 길이는 participant의 길이보다 1 작기때문에 완주 못한 사람은 무조건 한명
+- for문 동안 다르면 출력하고 종료하고 만약 끝까지 같다면 맨 마지막 배열의 사람이 미완주자
+- 테스트케이스 하나가 시간초과 에러 발생
+- 
 ---
