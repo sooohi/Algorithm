@@ -2,6 +2,7 @@ package Programmers;
 import java.util.*;
 public class Solution9 {
     public static void main(String[] args) {
+        Stack<String>stack = new Stack<>();
         boolean answer= false;
         String s= "(()(";
         int cnt=0;
