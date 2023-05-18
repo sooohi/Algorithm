@@ -90,3 +90,7 @@ int answer = count-lost.length;
 ### 다른 사람의 코멘트
 - 스택으로 풀어보기
 ---
+## Solution10-올바른 괄호(stack 사용)
+- s를 한 글자씩 가져와 '('일 경우 push로 추가하고, ')'일 경우 pop으로 처리
+- 그리고 isempty함수로 스택 값 확인하여 없다면 false
+- 마지막에는 없어야 하는데 만약 stack의 size가 0보다 크다면 false처리
