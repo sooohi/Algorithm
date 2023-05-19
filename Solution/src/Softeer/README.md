@@ -10,3 +10,7 @@
 
 ## Solution3-주행거리 비교
 - else/if 사용해서 비교
+
+## Solution3-8단 변속기
+- else/if를 사용해 해결
+- ascending과 descending을 각각 배열로 만들어 놓고 num과 비교하여 cnt의 개수를 통해 출력
