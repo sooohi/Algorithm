@@ -1,9 +1,8 @@
 # 백준 1152문제 풀이
 
 ## 1152 - 단어의 개수
-- 반복되는 숫자 중 하나만 넣기 위해 처음에는 arr[i]!=arr[i+1]로 비교를 했으나 배열 크기 오류가 발생
-- cnt를 만들어 arr[i] != cnt 비교
-- 단 여기서 0-9까지의 숫자는 입력받기 때문에 cnt는 10으로 지정
-
-## 시도했던 방법
-1. scanner을 이용(위의 방법이 더 효과좋음)
+- BufferedReader을 사용
+- StringTokenizer을 사용해 " "을 기준으로 자름
+- countTokens()은 StringTokenizer의 남아있는 토큰 갯수를 반환
+####
+- buffer을 사용하지 않고, 입력받은 문자열이 공백이면 cnt++해주는 방식으로 구현. -> 이것보다 BufferedReader을 이용하는 것이 더 효율적
